@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="UTF-8">
+         <title>form of data</title>
+         <style>
+            body 
+            {   background-image: url("bg.jpg");
+                background-size: cover;
+                width:100%;
+        
+                margin: 50px
+            }
+             form{align-self: auto}
+             fieldset{border:2px solid;margin:10px auto;width:500px  }
+             legend{border:2px solid;margin: 10px;padding:10px }
+             label{padding:5px;display:block }
+             input[type="text"],input[type="password"],input[typy="email"],{width:200px;padding:7px;display:block}
+             input[type="submit"]{display:block;margin:10px }
+             hr{border: 1px solid }
+             textarea{width:200px }
+         </style>
+     </head>
+     <body>
+         <form>
+             <fieldset>
+                 <legend>Personal Information</legend>
+
+                 <label>User Name</label>
+                 <input type="text" placeholder="Enter your Name">
+                    
+                 <label>Password</label>
+                 <input type="password" placeholder="Password">
+                   
+                 <label>E-Mail</label>
+                 <input type="text" placeholder="E-Mail ">
+                    
+                 <label>Universal</label>
+                 <input type="text" placeholder="Universal">
+
+                 <label>Gender</label>
+                 <select>
+                     <option>Male</option>
+                     <option>Female</option>
+                 </select>
+                
+             </fieldset>
+
+             <fieldset>
+                 <legend>Your favourites</legend>
+
+                 <label>Your Favourites text Editor</label>
+                 <input type="radio" name="editor">KomodoEditor<br>
+                 <input type="radio" name="editor">Vs code Editor <br>
+                 <input type="radio" name="editor">Nodepade Editor 
+                    <hr>
+                 <label>Your Favourites Browser</label>
+                 <input type="radio" name="browser">Google Chrome<br>
+                 <input type="radio" name="browser">mozilla firefox <br>
+                 <input type="radio" name="browser">opera 
+                 <hr>
+                 <label>Your Favourites Opreating System</label>
+                 <input type="radio" name="os">Linux<br>
+                 <input type="radio" name="os">Mac OSX <br>
+                 <input type="radio" name="os">Windows
+             </fieldset>
+
+             <fieldset>
+                 <legend>Your Message</legend>
+                 <textarea></textarea>
+                 <input type="submit" value="send your data">
+             </fieldset>
+         </form>
+     </body>
+ </html>
